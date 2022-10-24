@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="img/Captura.PNG" href="img/Captura.PNG"/>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Braulio Herrera | AlphaDat</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>AlphaDat</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">CONOCIMIENTOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://github.com/Zamahell" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/braulio-herrera-579bb0226/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida typeWritter">Welcome</p>
+                <h2>Soy <span>Braulio Herrera</span>, <span><</span>Desarrollador Jr<span>/></span></h2>
+                <p class="descripcion">Apasionado por el desarrollo y las tecnologias</p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/Imagen.png" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Braulio Herrera</span> </h2>
+            <h3>Desarrollador Jr</h3>
+            <p>Estudiante de último semestre de la carrera de Ingeniería en informática en el instituto Duoc UC, apasionado de las tecnologías y el buen café. Desde pequeño me intereso el mundo de las computadoras, revisar como funcionaban, abrir notebooks era un pasatiempo. Ahora me encuentro estudiando nuevas tecnologías a través de plataformas digitales y realizando mi portafolio de título.</p>
+            <p>Mi objetivo es convertirme en un buen profesional en el área TI, avanzar en el mundo del desarrollo y del análisis de datos.</p>
+            <!-- <a href="#">Descargar CV</a> -->
+        </div>
+    </section>
+
+    <!-- SECCION C O N O C I M I E N T O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS CONOCIMIENTOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Diseño Web</h4>
+                <hr>
+                <p>Maquetación web con HTML5, estructura responsive para todo tipo de dispositivo</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Programación Javascript</h4>
+                <hr>
+                <p>Uso de JS para el manejo de DOM, creación de pequeñas aplicaciones y funcionalidades</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>CSS3</h4>
+                <hr>
+                <p>Uso de las hojas de estilo en cascada, para entregar el mejor diseño web posible a las necesidades del usuario</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>SQL - PL/SQL</h4>
+                <hr>
+                <p>Control y manejo de consultas,  programación de base de datos</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code-merge"></i></span>
+                <h4>GIT</h4>
+                <hr>
+                <p>Control y versionamiento del codigo con git y github </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-people-group"></i></span>
+                <h4>Metodologia Agil SCRUM </h4>
+                <hr>
+                <p>Experiencia en el marco de trabajo agil Scrum, con uso de tablero KANBAS para una mejor organización de tareas y sprints</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://play.google.com/store/apps/details?id=com.github.beelzebu.duocoeste&hl=es_419&gl=US" target="_blank"><img src="img/proyecto1.jpg" alt="Imagen proyecto1 DuocOeste"></a>
+                <div class="info">
+                    <h4>DuocOeste</h4>
+                    <p>Aplicación Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://sparkly-salamander-c712bc.netlify.app/" target="_blank"><img src="img/proyecto2.jpg" alt="Proyecto"></a>
+                <div class="info">
+                    <h4>Página Frelance</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://papaya-rugelach-33b207.netlify.app/index.html" target="_blank"><img src="img/proyecto3.jpg" alt="Proyecto3"></a>
+                <div class="info">
+                    <h4>BienesRaices</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://effulgent-speculoos-17256c.netlify.app/" target="_blank"><img src="img/proyecto4.jpg"  alt="Proyecto4"></a>
+                <div class="info">
+                    <h4>Portafolio Personal</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://mellifluous-otter-1eadd9.netlify.app/" target="_blank"><img src="img/proyecto5.jpg" alt="Imagen pagina Dinosaurio"></a>
+                <div class="info">
+                    <h4>Juego de Dinosaurio</h4>
+                    <p>app web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://effulgent-panda-192aa2.netlify.app/" target="_blank"><img src="img/proyecto6.jpg" alt="Pagina web"></a>
+                <div class="info">
+                    <h4>Página web servicios</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://colab.research.google.com/drive/1nAMUrHIbNEKblhj_8ce948B75nSDM7er?usp=sharing" target="_blank"><img src="img/proyecto8.jpg" alt="Imagen proyecto"></a>
+                <div class="info">
+                    <h4>Analisis de datos "Clima en Australia"</h4>
+                    <p>Minearia de datos con Python</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://colab.research.google.com/drive/1vTbW_YCbVmp8t2iWuGeUGvQVVxmZEk7Z?usp=sharing" target="_blank"><img src="img/proyecto9.jpg" alt="Proyecto Mineria"></a>
+                <div class="info">
+                    <h4>Analisis de datos "Arbol de decisiones"</h4>
+                    <p>Mineria de datos con Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/brau.herrerahuerta@gmail.com" method="POST">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad" name="name" required>
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad" name="email" required>
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full" name="subject" required>
+                </div>
+                <div class="fila">
+                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" required></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <input type="hidden" name="_next" value="http://192.168.56.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="https://github.com/Zamahell" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/braulio-herrera-579bb0226/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
